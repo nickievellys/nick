@@ -1,0 +1,25 @@
+
+
+div {
+    color: deepskyblue;
+}
+
+.balloon-box {
+    width: 281px;
+    height: 53px;
+    background: #f1f1f1;
+    border-radius: 26.5px;
+    text-align: center;
+}
+
+.balloon-box::after {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
+    background: #f1f1f1;
+    position: relative;
+    float: right;
+    margin: 10px 30px 0 0;
+}
