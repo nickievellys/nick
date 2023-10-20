@@ -1,0 +1,61 @@
+.flex-container {
+    display: flex;
+
+    padding: 10px;
+}
+
+.flex-item {
+    padding: 20px;
+    background-color: lightblue;
+    margin: 2px;
+    border: 2px solid rgb(52, 52, 175);
+    border-radius: 5px;
+
+}
+
+.flex-container {
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.flex-item:nth-child(1) {
+    flex: 0, 2;
+    background-color: rgb(240, 201, 167);
+
+}
+
+.flex-item:nth-child(2) {
+    flex: 1;
+    background-color: rgb(243, 237, 198);
+}
+
+.flex-item:nth-child(3) {
+    flex: 1;
+    background-color: rgb(196, 164, 235);
+}
+
+.flex-item {
+    flex-grow: 1;
+    flex-basis: 60px;
+    transition: all 0.3s ease;
+    /* Adiciona uma transição para visualizar mudanças */
+}
+
+.flex-item:hover {
+    background-color: lavender;
+    /* Altera a cor de fundo ao passar o mouse */
+}
+
+h1 {
+    color: rgb(245, 105, 105);
+}
+
+body {
+    background-color: rgb(240, 210, 202);
+}
+
+.flex-item:nth-child(5) {
+    flex: 1;
+    background-color: rgb(210, 255, 182);
+}
