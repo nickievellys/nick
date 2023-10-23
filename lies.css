@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr; /* 3 colunas: a
+        primeira e a terceira com o mesmo tamanho, e a do meio
+        com o dobro do tamanho */
+        grid-template-rows: auto 100px; /* a primeira linha
+        terá o tamanho do conteúdo e a segunda linha terá 100px
+        */
+        }
+        .item1 {
+            border: 2px solid brown;
+          
+            grid-column: 2 / 2; /* Inicia na primeira linha vertical do grid e se estende
+até a terceira */;
+
+           
+            grid-row: 1 / 2; /* Posiciona o item na primeira linha */
+            }
+            .item2 {
+                border: 2px solid brown;
+               
+                grid-column: 1 / 2; /* Inicia na segunda linha vertical do grid e vai até a
+                quarta */
+            grid-row: 1 / 2; /* Posiciona o item na segunda linha */
+            
+            }
+            .item3 {
+                border: 2px solid brown;
+               
+                grid-column: 3/ 1; /* Inicia na terceira linha vertical do grid e vai até a
+                quarta */
+            grid-row: 1 / 2; /* Posiciona o item na terceira  linha */
+            
+            }
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3,
+                1fr);
+                grid-template-areas:
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+                }
+                .header {
+                grid-area: header;
+                }
+                .sidebar {
+                grid-area: sidebar;
+                }
+                .content {
+                grid-area: content;
+                }
+                .footer {
+                grid-area: footer;
+                }
+                body {background-color: black;}
+                h1 {color: brown;
+                font-family: 'Times New Roman', Times, serif;}
+                div {color: aliceblue;}
+                
+                
