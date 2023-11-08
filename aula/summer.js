@@ -7,12 +7,12 @@ for (var i = 1; i < N; i++) {
 console.log ("Número:" + i);
 
 
-var i = 0;
+var i = 1;
+var soma= 0
 while (i <= 8) {
     console.log("Contagem: " + i);
 i++;
     }
-
 
     function factorial(num) {
        
@@ -32,4 +32,11 @@ i++;
       }
       
       
-      console.log(factorial(5)); // 
+      console.log(factorial(5)); //
+
+
+      var contador = 1
+      var soma = 0 
+
+    while ( contador <= 5){       soma = soma + contador
+         contador = contador + 1}
