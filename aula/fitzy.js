@@ -19,4 +19,10 @@ var contador = 1
         console.log (divisão)
         console.log (contador)
 
-        
+        var contador2 = 5
+        var fatorial = 1
+
+        while ( contador2 >1) { fatorial = fatorial + contador2 
+        contador2= contador2 - 1}
+
+        console.log ( fatorial)
